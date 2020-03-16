@@ -57,4 +57,6 @@ ADD frigate frigate/
 COPY detect_objects.py .
 COPY benchmark.py .
 
+COPY config /config
+
 CMD ["python3.7", "-u", "detect_objects.py"]

@@ -1,0 +1,29 @@
+{
+  "name": "Frigate",
+  "version": "0.1",
+  "slug": "frigate",
+  "description": "Icecast2 Server",
+  "arch": ["i386"],
+  "url": "https://github.com/lucasartoni/frigate",
+  "startup": "application",
+  "boot": "auto",
+  "init": false,
+  "ingress": false,
+  "panel_icon": "mdi:power",
+  "panel_title": "Frigate",
+  "options": {
+    "source_password": "aaaa",
+    "admin_password": "bbbb",
+    "password": "cccc",
+    "relay_password": "dddd"
+  },
+  "schema": {
+    "source_password": "str",
+    "admin_password": "str",
+    "password": "str",
+    "relay_password": "str"
+  },
+  "ports": {
+    "5000/tcp": 5000
+  }
+}
